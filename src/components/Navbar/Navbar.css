@@ -1,0 +1,113 @@
+.navbar {
+    width: 100%;
+    padding: 12px 5%; /* Adjusted padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 14px; /* Proper text size */
+    color: #e5e5e5;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+}
+
+/* Left Section */
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Reduced gap for better alignment */
+}
+
+.navbar-left img {
+    width: 85px; /* Adjusted logo size */
+}
+
+.navbar-left ul {
+    display: flex;
+    list-style: none;
+    gap: 15px; /* Reduced space between menu items */
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-left ul li {
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.navbar-left ul li:hover {
+    color: #e50914;
+}
+
+/* Right Section */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Reduced spacing */
+}
+
+.navbar-right .icons {
+    width: 18px; /* Smaller icons for better fit */
+    cursor: pointer;
+}
+
+.navbar-profile {
+    display: flex;
+    align-items: center;
+    gap: 6px; /* Improved alignment */
+    cursor: pointer;
+    position: relative;
+}
+
+.profile {
+    width: 30px; /* Adjusted profile size */
+    border-radius: 4px;
+}
+
+/* Dropdown */
+.navbar .dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 140px;
+    background: #191919;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+.navbar-profile:hover .dropdown {
+    display: block;
+}
+
+.dropdown p {
+    font-size: 13px;
+    padding: 8px;
+    margin: 0;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.dropdown p:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+}
+
+/* Sign In Button */
+.sign-in {
+    font-size: 14px;
+    padding: 6px 12px;
+    background: #e50914;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.sign-in:hover {
+    background: #b20710;
+}
